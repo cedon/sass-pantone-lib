@@ -1,0 +1,20 @@
+{
+	"name": "sass-pantone-lib",
+	"version": "1.0.0",
+	"description": "A SASS library the converts Pantone color names to RGB, HSL, Hex, and Web Safe values for use on the web",
+	"keywords": [
+		"SASS",
+		"Pantone",
+		"CSS"
+	],
+	"homepage": "https://github.com/cedon/sass-pantone-lib#readme",
+	"bugs": {
+		"url": "https://github.com/cedon/sass-pantone-lib/issues"
+	},
+	"license": "GPL-3.0",
+	"author": "Jon Liebold",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/cedon/sass-pantone-lib.git"
+	}
+}
