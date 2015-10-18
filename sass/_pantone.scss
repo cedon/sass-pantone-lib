@@ -1,0 +1,33 @@
+@import 'maps/pantone-solid-c-hex.map';
+@import 'maps/pantone-solid-c-hsl.map';
+@import 'maps/pantone-solid-c-rgb.map';
+
+// Returns the Hexadecimal value of specified color
+@function pantone-solid-c-hex($color) {
+  @each $name in $pantone-solid-c-hex {
+    @if ($color == nth($name, 1)) {
+      @return nth($name, 2);
+    }
+  }
+  @return false;
+}
+
+// Returns the CSS HSL property of specified color
+@function pantone-solid-c-hsl($color) {
+  @each $name in $pantone-solid-c-hsl {
+    @if ($color == nth($name, 1)) {
+      @return nth($name, 2);
+    }
+  }
+  @return false;
+}
+
+// Returns the CSS RGB Property for specificed color
+@function pantone-solid-c-rgb($color) {
+  @each $name in $pantone-solid-c-rgb {
+    @if ($color == nth($name, 1)) {
+      @return nth($name, 2);
+    }
+  }
+  @return false;
+}
