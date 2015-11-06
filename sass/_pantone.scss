@@ -22,7 +22,7 @@
   @return false;
 }
 
-// Returns the CSS RGB Property for specificed color
+// Returns the CSS RGB Property for specified color
 @function pantone-solid-c-rgb($color) {
   @each $name in $pantone-solid-c-rgb {
     @if ($color == nth($name, 1)) {
